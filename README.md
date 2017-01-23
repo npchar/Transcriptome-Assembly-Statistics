@@ -1,7 +1,7 @@
 # Transcriptome-Assembly-Statistics
 Some scripts providing assembly statistics
 
-# i) DescriptionAssemblage.R
+## i) DescriptionAssemblage.R
 ######requirement: 
 This R script requires obviously R, but also the "optparse" library (see : https://cran.r-project.org/web/packages/optparse/index.html). Ask for two arguments, an input file with contig's names and contig's length, and an output filename. It produces a tab-separated tabular.
 ###### exemples:
