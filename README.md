@@ -1,13 +1,11 @@
 # Transcriptome-Assembly-Statistics
-#Some scripts providing assembly statistics
+Some scripts providing assembly statistics
 
 # i) DescriptionAssemblage.R
-# ===========================
-# requirement: R and "optparse" R library (see : https://cran.r-project.org/web/packages/optparse/index.html)
-# ------------
-# from a tabular with names and contig's length, it produces a tab-separated tabular with some statistics :
-# exemples:
-#-----------
+requirement: R and "optparse" R library (see : https://cran.r-project.org/web/packages/optparse/index.html)
+
+from a tabular with names and contig's length, it produces a tab-separated tabular with some statistics :
+exemples:
 $ head -n 3 exemple.fasta.statsize
     TRINITY_DN21478_c0_g1_i1        294
     TRINITY_DN21454_c0_g1_i1        208
