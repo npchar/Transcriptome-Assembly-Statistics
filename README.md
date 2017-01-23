@@ -2,10 +2,9 @@
 Some scripts providing assembly statistics
 
 # i) DescriptionAssemblage.R
-requirement: R and "optparse" R library (see : https://cran.r-project.org/web/packages/optparse/index.html)
-
-from a tabular with names and contig's length, it produces a tab-separated tabular with some statistics :
-exemples:
+######requirement: 
+This R script requires obviously R, but also the "optparse" library (see : https://cran.r-project.org/web/packages/optparse/index.html). Ask for two arguments, an input file with contig's names and contig's length, and an output filename. It produces a tab-separated tabular.
+###### exemples:
 ```
 head -n 3 exemple.fasta.statsize
     TRINITY_DN21478_c0_g1_i1        294
