@@ -79,7 +79,7 @@ do
 	Longest=$(cat ${DATA}.DescriptionAssemblage | grep "Longest contigs" | awk -F "\t" '{print $2}')
 	Nc500=$(cat ${DATA}.DescriptionAssemblage | grep "Number of contigs > 500" | awk -F "\t" '{print $2}')
 	Nc1k=$(cat ${DATA}.DescriptionAssemblage | grep "Number of contigs > 1k" | awk -F "\t" '{print $2}')
-	Nc10k=$(cat ${DATA}.DescriptionAssemblage | grep "Number of contigs > 10k" | awk -F "\t" '{print $2}')
+	Nc10k=$(cat ${DATA}.DescriptionAssemblage | grep "Number of contigs* > 10k" | awk -F "\t" '{print $2}')
 	Mean=$(cat ${DATA}.DescriptionAssemblage | grep "mean contig size" | awk -F "\t" '{print $2}')
 	Median=$(cat ${DATA}.DescriptionAssemblage | grep "median contig size" | awk -F "\t" '{print $2}')
 	N50=$(cat ${DATA}.DescriptionAssemblage | grep "N50 contig length" | awk -F "\t" '{print $2}')
