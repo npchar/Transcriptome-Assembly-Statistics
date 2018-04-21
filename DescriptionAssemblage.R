@@ -38,5 +38,5 @@ Sup1k = length(data[data$length>1000,1])
 Sup10k = length(data[data$length>10000,1])
 N50 = sortedLength[min(which(cumsum(sortedLength)>sum(sortedLength)/2))] 
 res = c(NumberOfContigs, totalsize, shortest, longest, Sup500, Sup1k, Sup10k, meanAssembly, medianAssembly, N50)
-RowNames = c("Number of contigs", "total size of contigs", "Shortest contigs", "Longest contigs", "Number of contigs > 500", "Number of contigs > 1k", "Number of contig > 10k", "mean contig size", "median contig size","N50 contig length")
+RowNames = c("Number of contigs", "total size of contigs", "Shortest contigs", "Longest contigs", "Number of contigs > 500", "Number of contigs > 1k", "Number of contigs > 10k", "mean contig size", "median contig size","N50 contig length")
 write.table(cbind(RowNames, res), file = opt$out, quote=F, row.names=F, sep="\t")
